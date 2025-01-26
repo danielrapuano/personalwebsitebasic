@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+  <head class="head">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap">
+
+    <style>
+
+
+
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.container-carousel {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 400px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.img-carousel {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  img-carousel {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+
+.summary-card {
+  border-style:outset;
+  border-color: rgb(59, 59, 212);
+  margin: 50px; 
+}
+
+
+
+
+    </style>
+
+        <nav style="background-color: rgb(59, 59, 212); box-shadow: 0 9px 32px rgba(59, 59, 212); padding: 10px;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <!-- Logo -->
+                <div>
+                    <a href = "index.html">
+                        <img src="images/siteLogo-negate.png" alt="siteLogo" width="30" height="30">
+                    </a>
+                </div>
+        
+                <!-- Navigation Links -->
+                <div style="display: flex; gap: 20px;">
+                    <a href="index.html" style="color: white; text-decoration: none;">Home</a>
+                </div>
+            </div>
+        </nav>
+      
+    
+  </head>
+<body>
+
+        <div class = "row" style = "text-align: left; padding-left: 40px; padding-top: 20px; padding-bottom: 75px; font-size: 50px;">
+            Portfolio
+        </div>
+        <div class = "row" style = "text-align: center; font-size: 25px">
+            <strong> Various University Projects </strong>
+            <p style = "font-size: 15px;">During my attendance as a computer science major, I worked in multiple groups to <br>
+                create various applications from start to finish.  The first of these was for a UX/UI course that required us <br>
+                to reimagine a pre-existing website for a restaurant..</p>
+            <p style = "font-size: 15px; padding-bottom: 40px;"> 
+                <a href = "https://github.com/JPWarr7/AI-Campaign-Manager.git">Link to source code (application non-active)</a>
+            </p>
+        </div>
+        <div class = "row" style = "text-align: center;">
+            <div class = "col">
+                <img src = "images/campAIgn-landing.jpg" style = "width: 400px; height: 225px;">
+            </div>
+            <div class = "col">
+                <img src = "images/add-campaign.jpg" style = "width: 400px; height: 225px;">
+            </div>
+            <div class = "col" style= "padding-bottom: 150px;">
+                <img src = "images/JalHeaven-Homepage-Screenshot.jpg" style = "width: 400px; height: 225px;">
+            </div>
+        </div>
+
+
+        <div class = "row" style = "text-align: center; font-size: 25px">
+            <strong> Figma Project: "Borders Social" </strong>
+            <p style = "font-size: 15px;">A few pages designed in figma for a fictional skateboarder social media site.</p>
+            <p style = "font-size: 15px; padding-bottom: 40px;"> 
+            </p>
+        </div>
+        <div class = "row" style = "text-align: center;">
+            <div class = "col">
+                <img src = "images/borderslanding.png" style = "width: 400px; height: 250px;">
+            </div>
+            <div class = "col">
+                <img src = "images/bordersprofilecrop.png" style = "width: 400px; height: 500px;">
+            </div>
+            <div class = "col" style = "padding-bottom: 150px;">
+                <img src = "images/bordersaccount.png" style = "width: 400px; height: 500px;">
+            </div>
+        </div>
+
+    
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+      $('input').on('change', function() {
+  $('body').toggleClass('blue');
+});
+
+    </script>
+</body>
+<footer>
+    
+</footer>
+
+</html>
