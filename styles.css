@@ -171,3 +171,14 @@
   #item-3:checked ~ .player #test  {
     transform: translateY(-80px);
   }
+
+
+
+
+
+/* Carousel styles */
+
+  .carousel-fade .carousel-item {
+    transition: opacity 1.5s ease-in-out;
+  }
+  

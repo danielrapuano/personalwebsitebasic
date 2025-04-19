@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 <!DOCTYPE html>
 <html lang="en">
   <head class="head">
@@ -10,290 +9,130 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap">
 
     <style>
-
-
-
-
-input[type=radio] {
-  display: none;
+      .thumbnail {
+        transition: transform 0.3s ease-in-out;
 }
 
-.card {
-  position: absolute;
-  width: 60%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: transform .4s ease;
-  cursor: pointer;
+      .thumbnail:hover {
+        transform: scale(1.05);
 }
-
-.container-carousel {
-  width: 100%;
-  max-width: 800px;
-  max-height: 600px;
-  height: 400px;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 30px;
-}
-
-.cards {
-  position: relative;
-  width: 100%;
-  height: 50%;
-  margin-bottom: 20px;
-}
-
-.img-carousel {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-  transform: translatex(-40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-  transform: translatex(40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
-  
-  img-carousel {
-    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-  }
-}
-
-.summary-card {
-  border-style:outset;
-  border-color: rgb(59, 59, 212);
-  margin: 50px; 
-}
-
-.thumbnail {
-            width: 200px; /* Small preview size */
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        /* Modal Background */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Enlarged Image */
-        .modal img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 10px;
-        }
-
-        /* Close Button */
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 40px;
-            color: white;
-            cursor: pointer;
-        }
-
-
 
     </style>
+      
+      
 
-        <nav style="background-color: rgb(59, 59, 212); box-shadow: 0 9px 32px rgba(59, 59, 212); padding: 10px;">
-            <div style="display: flex; align-items: center; justify-content: space-between;">
-                <!-- Logo -->
-                <div>
-                    <a href = "index.html">
-                        <img src="images/siteLogo-negate.png" alt="siteLogo" width="30" height="30">
-                    </a>
-                </div>
-        
-                <!-- Navigation Links -->
-                <div style="display: flex; gap: 20px;">
-                    <a href="index.html" style="color: white; text-decoration: none;">Home</a>
-                </div>
-            </div>
-        </nav>
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(59, 59, 212);">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/siteLogo-negate.png" alt="Site Logo" width="30" height="30">
+    </a>
+    <div>
+      <a href="portfolio.html" class="text-white text-decoration-none">Portfolio</a>
+    </div>
+  </div>
+</nav>
       
     
   </head>
-<body>
+  <body>
 
-        <div class = "row" style = "text-align: left; padding-left: 40px; padding-top: 20px; padding-bottom: 75px; font-size: 50px;">
-            Portfolio
+    <div class="container">
+      <div class="row text-start pt-4 pb-4">
+        <div class="col">
+          <h1 style="font-size: 2.5rem;">Portfolio</h1>
         </div>
-
-        <div class = "row" style = "text-align: center; font-size: 25px">
-          <strong> Figma Project: "The Shoppe" </strong>
-          <p style = "font-size: 15px;">Pages designed in figma for a fictional shopping website that include a homepage, and a prodcuts page.</p>
-          <p style = "font-size: 15px; padding-bottom: 25px;"> 
-          </p>
       </div>
-      <div class = "row" style = "text-align: center;">
-          <div class = "col">
-              <img src = "images/ShoppeHome.png" alt="Thumbnail" class="thumbnail" onclick="openModal()" style = "width: 500px; height: 300px;">
-              <div class="modal" id="imageModal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <img id="modalImage" src="" alt="Enlarged Image">
-            </div>
-          </div>
-          <div class = "col">
-              <img src = "images/ShoppeProducts.png" alt="Thumbnail" class="thumbnail" onclick="openModal()" style = "width: 500px; height: 300px;">
-              <div class="modal" id="imageModal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <img id="modalImage" src="" alt="Enlarged Image">
-            </div>
-          </div>
-      </div>
-      <p>
-      </p>
-
-      <div class = "row" style = "text-align: center; font-size: 25px; padding-top: 50px;">
-        <strong> Figma Project: "Borders Social" </strong>
-        <p style = "font-size: 15px;">A few pages designed in figma for a fictional skateboarder social media site.</p>
-        <p style = "font-size: 15px; padding-bottom: 25px;"> 
-        </p>
-    </div>
-    <div class = "row" style = "text-align: center;">
-        <div class = "col">
-            <img src = "images/borderslanding.png" alt="Thumbnail" class="thumbnail" onclick="openModal()" style = "width: 400px; height: 250px;">
-            <div class="modal" id="imageModal">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <img id="modalImage" src="" alt="Enlarged Image">
-          </div>
-        </div>
-        <div class = "col">
-            <img src = "images/bordersprofilecrop.png" alt="Thumbnail" class="thumbnail" onclick="openModal()" style = "width: 400px; height: 500px;">
-            <div class="modal" id="imageModal">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <img id="modalImage" src="" alt="Enlarged Image">
-          </div>
-        </div>
-        <div class = "col" style = "padding-bottom: 50px;">
-            <img src = "images/bordersaccount.png" alt="Thumbnail" class="thumbnail" onclick="openModal()" style = "width: 400px; height: 500px;">
-            <div class="modal" id="imageModal">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <img id="modalImage" src="" alt="Enlarged Image">
-          </div>
-        </div>
-    </div>
-
-      <div class = "row" style = "text-align: center; font-size: 25px">
-          <strong> Various University Projects </strong>
-          <p style = "font-size: 15px;">During my attendance as a computer science major, I worked in multiple groups to create various applications from start to finish. <br>
-              The first of these was for a UX/UI course that required us to reimagine a pre-existing website for a restaurant.<br>
-              While simple, it implements several key design concepts pertaining to optimized human-computer interaction including <br>
-              proper signaling through bordering and spacing, standard iconography for signaling, and recognizable page structure.  I <br>
-              additionally worked on an AI generative application that served to provide small businesses the ability to create <br>
-              customizalbe advertisements utilizing the OpenAI API, and then publish these ads to the social media of their choosing. <br>
-              I primarily worked on the frontend for this project alongside two others focusing on backend and database development. <br>
-              I had to implement components such as form overlays, folder structure display, and overall styling/ design choices. <br>
-              Both of these projects were limited to a semester, so time was limited.  In the future I intend to modify these projects <br>
-              to better reflect a more robust and clean user interface.
-              </p>
-
-          <p style = "font-size: 15px; padding-bottom: 40px;"> 
-              <a href = "https://github.com/JPWarr7/AI-Campaign-Manager.git">Link to source code (application non-active)</a>
-          </p>
-      </div>
-      <div class = "row" style = "text-align: center;">
-          <div class = "col">
-              <img src = "images/campAIgn-landing.jpg" alt="Thumbnail" class="thumbnail" onclick="openModal()" style = "width: 400px; height: 225px;">
-              <div class="modal" id="imageModal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <img id="modalImage" src="" alt="Enlarged Image">
-            </div>
-          </div>
-          <div class = "col">
-              <img src = "images/add-campaign.jpg" alt="Thumbnail" class="thumbnail" onclick="openModal()" style = "width: 400px; height: 225px;">
-              <div class="modal" id="imageModal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <img id="modalImage" src="" alt="Enlarged Image">
-            </div>
-          </div>
-          <div class = "col" style= "padding-bottom: 150px;">
-              <img src = "images/JalHeaven-Homepage-Screenshot.jpg" alt="Thumbnail" class="thumbnail" onclick="openModal()" style = "width: 400px; height: 225px;">
-              <div class="modal" id="imageModal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <img id="modalImage" src="" alt="Enlarged Image">
-            </div>
-          </div>
-      </div>
-
-
-
-
     
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+      <div class="row text-center mb-5">
+        <div class="col">
+          <strong style="font-size: 1.5rem;">Figma Project: "The Shoppe"</strong>
+          <p class="small">Pages designed in Figma for a fictional shopping website including a homepage and a products page.</p>
+        </div>
+      </div>
+    
+      <div class="row text-center mb-5">
+        <div class="col-md-6 mb-3">
+          <img src="images/ShoppeHome.png" alt="Shoppe Home" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="images/ShoppeProducts.png" alt="Shoppe Products" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+      </div>
+    
+      <div class="row text-center mb-5">
+        <div class="col">
+          <strong style="font-size: 1.5rem;">Figma Project: "Borders Social"</strong>
+          <p class="small">Pages designed for a fictional skateboarder social media site.</p>
+        </div>
+      </div>
+    
+      <div class="row text-center mb-5">
+        <div class="col-md-4 mb-3">
+          <img src="images/borderslanding.png" alt="Borders Landing" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="images/bordersprofilecrop.png" alt="Borders Profile" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="images/bordersaccount.png" alt="Borders Account" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+      </div>
+    
+      <div class="row text-center mb-5">
+        <div class="col">
+          <strong style="font-size: 1.5rem;">Various University Projects</strong>
+          <p class="small">
+            During my time as a Computer Science major, I worked in multiple groups to create applications...<br>
+            (Summarize here if you want it tighter)
+          </p>
+          <a href="https://github.com/JPWarr7/AI-Campaign-Manager.git" class="btn btn-primary" target="_blank">View Source Code</a>
+        </div>
+      </div>
+    
+      <div class="row text-center mb-5">
+        <div class="col-md-4 mb-3">
+          <img src="images/campAIgn-landing.jpg" alt="Campaign Landing" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="images/add-campaign.jpg" alt="Add Campaign" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="images/JalHeaven-Homepage-Screenshot.jpg" alt="Restaurant Homepage" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+      </div>
+    
+    </div>
+    
+    <!-- SINGLE MODAL outside container -->
+    <div class="modal" id="imageModal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+      <span class="close" onclick="closeModal()" style="position: absolute; top: 10px; right: 20px; font-size: 40px; color: white; cursor: pointer;">&times;</span>
+      <img id="modalImage" src="" alt="Enlarged" style="max-width: 90%; max-height: 90%;">
+    </div>
+    
     <script>
-      $('input').on('change', function() {
-  $('body').toggleClass('blue');
-});
-
-    </script>
-
-<script>
-  // Get all images with class 'thumbnail'
-  const images = document.querySelectorAll(".thumbnail");
-  const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImage");
-
-  images.forEach(img => {
-      img.addEventListener("click", function() {
-          modal.style.display = "flex";
-          modalImg.src = this.src; // Set clicked image as modal image
-      });
-  });
-
-  function closeModal() {
-      modal.style.display = "none";
-  }
-
-  // Close modal if user clicks outside the image
-  modal.addEventListener("click", function(event) {
-      if (event.target === modal) {
-          closeModal();
+      function openModal(src) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        modal.style.display = "flex";
+        modalImg.src = src;
       }
-  });
-</script>
-  
-</body>
+      
+      function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+      
+      // Close modal if the user clicks outside the image
+      document.getElementById("imageModal").addEventListener("click", function(event) {
+        const modalImg = document.getElementById("modalImage");
+        if (event.target !== modalImg) {
+          closeModal();
+        }
+      });
+      </script>
+      
+    
+    </body>
+    
 <footer>
     
 </footer>
