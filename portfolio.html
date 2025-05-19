@@ -37,28 +37,123 @@
   <body>
 
     <div class="container">
-      <div class="row text-start pt-4 pb-4">
+      <div class="row text-start pt-4 pb-4 mb-6">
         <div class="col">
           <h1 style="font-size: 2.5rem;">Portfolio</h1>
         </div>
       </div>
-    
+
+      <!--Stock App-->
       <div class="row text-center mb-5">
         <div class="col">
-          <strong style="font-size: 1.5rem;">Figma Project: "The Shoppe"</strong>
-          <p class="small">Pages designed in Figma for a fictional shopping website including a homepage and a products page.</p>
+          <strong style="font-size: 1.5rem;">Prototype:  QuikStock</strong>
+          <p class="small">A basic applicaiton to look up stock data using the Finnhub API; 
+            from wireframing, to usability testing, to functional prototype. It's functionality 
+            is limited to a basic searh of a company's stock info, due to limitations of Finnhub's 
+            free tier (the chart image is a placeholder as that feature is included in the paid tier). 
+            My goal was not create a detailed applicaiton, but to show my ability to 
+            create a functional prototype and to show my design process.  That, I am able to not
+            only design a product itteratively through user feedback, but also program the front-end, 
+            and back-end using API requests.
+          </p>
+          <p class = "small">
+            <span style = "font-weight: bold;">Tools Used:</span>
+            <span style = "font-style: italic;">Figma, Finnhub API, React, Tailwind</span>
+          </p>
+
+        </div>
+      </div>
+    
+      <div class="row text-center mb-2 mt-5">
+
+        <div class="col-md-6 mb-3">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">Landing Page Wireframe</h4>
+            <img src="images/Stock App - Wireframe 1.png" alt="QuikStock Wireframe 1" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <div class="card-body">
+              <p class="card-text">A wireframe of the landing page of the application.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">Search Result Wireframe</h4>
+            <img src="images/Stock App - Wireframe 2.png" alt="QuikStock Wireframe 2" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <div class="card-body">
+              <p class="card-text">A wireframe of the data result page of the application</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "row text-center mb-5">
+
+        <div class = "col-md-6 mb-3">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">Landing Page</h4>
+            <img src="images/QuikStockLanding.png" alt="QuikStock Landing" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <div class="card-body">
+              <p class="card-text">The landing page of the prototype</p>
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-md-6 mb-3">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">Search Result Page</h4>
+            <img src="images/QuikStockData.png" alt="QuikStock Search" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <div class="card-body">
+              <p class="card-text">The data result page of the prototype</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- The Shoppe-->
+      <div class="row text-center mb-5">
+        <div class="col">
+          <strong style="font-size: 1.5rem;">Figma Design: "The Shoppe"</strong>
+          <p class="small">Pages designed in Figma for a fictional shopping website including a homepage and a products page.
+            The goal was to create a clean looking site built around established online retail design patterns, while also trying
+            to improve upon them.  Many online retail sites have poor delineation between page elements, or poor signposting of 
+            certain functions. I tried to emphasize contrast, hence the monochrome color pallete.  This is an ongoing design I 
+            intend to itterate on and add to to better exemplify this.
+          </p>
         </div>
       </div>
     
       <div class="row text-center mb-5">
         <div class="col-md-6 mb-3">
-          <img src="images/ShoppeHome.png" alt="Shoppe Home" class="img-fluid thumbnail" onclick="openModal(this.src)">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">Landing Page</h4>
+            <img src="images/ShoppeLanding.png" alt="Shoppe Home" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <div class="card-body">
+              <p class="card-text">The landing page of the site.  Here the user is greeted with banner ads to promote certain products or sales.
+                They are also immediatley provided with options to search for products directly in the search bar, or browse by category.
+                Additionally, users may access their account, cart, or wishlist.
+              </p>
+            </div>
+          </div>
         </div>
+
         <div class="col-md-6 mb-3">
-          <img src="images/ShoppeProducts.png" alt="Shoppe Products" class="img-fluid thumbnail" onclick="openModal(this.src)">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">Clothing Search</h4>
+            <img src="images/ShoppePants.png" alt="Shoppe Pants" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <div class="card-body">
+              <p class="card-text">Showcasing what a search would look like having gone through the clothing category,
+                the user is able to navigate through a filter of options.  In this case they are viewing pairs of pants, being filtered
+                by price by ascending order. A breadcrumb is also provided to assist the user in navigation to previous pages.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     
+    <!-- Borders Social (taken out until its revised, doesn't look good)
+
       <div class="row text-center mb-5">
         <div class="col">
           <strong style="font-size: 1.5rem;">Figma Project: "Borders Social"</strong>
@@ -78,34 +173,62 @@
         </div>
       </div>
     
+    -->
+
       <div class="row text-center mb-5">
         <div class="col">
-          <strong style="font-size: 1.5rem;">Various University Projects</strong>
+          <strong style="font-size: 1.5rem;">University Projects</strong>
           <p class="small">
             During my time as a Computer Science major, I worked in multiple groups to create applications.<br>
             The following are screenshots from two of those projects:
-            <ul class="list-unstyled">
-              <li><strong>AI Campaign Manager</strong>: A web application that allows users to create and manage ad campaigns using the OpenAI API.</li>
-              <li><strong>Jalapeno Heaven</strong>: An existing restaurant website we overhauled that showcases the menu and allows users to place orders.</li>
-          </p>
-          <a href="https://github.com/JPWarr7/AI-Campaign-Manager.git" class="btn btn-primary" target="_blank">View Source Code</a>
+            </p>
         </div>
       </div>
     
       <div class="row text-center mb-5">
-        <div class="col-md-4 mb-3">
-          <img src="images/campAIgn-landing.jpg" alt="Campaign Landing" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        <div class="col-md-6 mb-3">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">CampAIgn</h4>
+            <img src="images/campAIgn-landing.jpg" alt="Campaign Landing" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <br>
+            <img src="images/add-campaign.jpg" alt="Add Campaign" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <div class="card-body">
+              <p class="card-text">A web application we developed for my senior capstone project.  It utilizes the OpenAI API to allow
+                users to generate customizable ads for their business based on demographic.  The user can also select the tone of the ad.
+                An image and a caption is generated into a social media post format to be exported, and saved in a project file system for later iterations.
+                The application is inactive due to keys being expired, and hosting issues. However, the source code is available below.
+                We received an A on the project, and it was well received by our professor and peers for its functionality, design, and depth. I worked 
+                on the front-end and the overall design and layout, as well as usability testing.
+              </p>
+              <a href="https://github.com/JPWarr7/AI-Campaign-Manager.git" class="btn btn-light" target="_blank">View Source Code</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <img src="images/add-campaign.jpg" alt="Add Campaign" class="img-fluid thumbnail" onclick="openModal(this.src)">
-        </div>
-        <div class="col-md-4 mb-3">
-          <img src="images/JalHeaven-Homepage-Screenshot.jpg" alt="Restaurant Homepage" class="img-fluid thumbnail" onclick="openModal(this.src)">
+
+        <div class="col-md-6 mb-3">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">Jalapeno Heaven Redesign</h4>
+            <img src="images/jalapeno heaven homepage.png" alt="Actual Homepage" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <br>
+            <img src="images/jalapeno heaven homepage updated.png" alt="Updated Homepage" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <div class="card-body">
+              <p class="card-text">Done for a human-computer interaction class, we had a few months to redesign an existing website
+                using UI/UX principles.  The whole standard UI design process was followed, including user interviews, testing, wireframing
+                and prototyping.  While simplistic, the goal was to update the usability and accessibility of the site, which, when compared
+                to the original, was immensely successful. We updated the entire page flow, added a more visible color pallete, emphasized
+                the most commonly used features, and overall established a more modern feel to the site.  Above is a before and after of the homepage.
+                The source code is below, but given time constraints of the course, was built in a about 2 weeks. I will continue to update it, however.
+              </p>
+              <a href="https://github.com/danielrapuano/Jalapeno-Heaven-Prototype.git" class="btn btn-light" target="_blank">View Source Code</a>
+            </div>
+          </div>
         </div>
       </div>
     
     </div>
     
+  
+
     <!-- SINGLE MODAL outside container -->
     <div class="modal" id="imageModal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
       <span class="close" onclick="closeModal()" style="position: absolute; top: 10px; right: 20px; font-size: 40px; color: white; cursor: pointer;">&times;</span>
