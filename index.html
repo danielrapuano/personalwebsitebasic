@@ -12,12 +12,34 @@
       font-family: 'DM Sans', sans-serif;
     }
     .summary-card {
-      border-style: outset;
-      border-color: rgb(59, 59, 212);
+      border-top: solid;
+      border-bottom: solid;
+      border-top-color: rgb(59, 59, 212);
+      border-bottom-color: rgb(59, 59, 212);
+
     }
     .carousel-fade .carousel-item {
       transition: opacity 1s ease;
     }
+    .carousel-inner {
+      height: 500px;
+      
+    }
+
+    .carousel-item {
+      height: 100%;
+    }
+
+    .carousel-item img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #portfolioCarousel {
+      box-shadow: 0 8px 20px rgb(59, 59, 212);
+      border-radius: 0 0 10px 10px;
+  }
+
   </style>
 </head>
 <body>
@@ -42,8 +64,8 @@
       <div class="col-md-6">
         <h1 class="display-4">Daniel Rapuano</h1>
         <p class="lead text-decoration-underline">UI/UX Designer / Frontend Developer </p>
-        <p>Welcome to my personal website. It provides examples of my work located in the portfolio,  as well as insight into my background. Located at the bottom of the page</p>
-        <p>Within the portfolio page is a sample of projects I contributed to either collaboratively, following AGILE methodology and deadlines, as well various personal projects including Figma designs and protypes I've coded.</p>
+        <p>Welcome to my personal website. It provides examples of my work located in the portfolio,  as well as insight into my background. Located at the bottom of the page
+        Within the portfolio page is a sample of projects I contributed to either collaboratively, following AGILE methodology and deadlines, as well various personal projects including Figma designs and protypes I've coded.</p>
         <a href="portfolio.html" class="btn btn-light mt-3 mb-4">Go to Portfolio</a>
       </div>
       <div class="col-md-6 text-center">

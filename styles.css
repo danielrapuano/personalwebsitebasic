@@ -22,6 +22,12 @@
       background-color: #428aa6;
     }
   }
+
+  #portfolioCarousel {
+  box-shadow: 0 8px 20px rgba(59, 59, 212, 0.2); /* Blue shadow on bottom */
+  border-radius: 0 0 10px 10px; /* Optional: rounded bottom corners */
+}
+
   
   input[type=radio] {
     display: none;
@@ -179,6 +185,6 @@
 /* Carousel styles */
 
   .carousel-fade .carousel-item {
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.0s ease-in-out;
   }
   
