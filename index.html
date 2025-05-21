@@ -21,19 +21,23 @@
     .carousel-fade .carousel-item {
       transition: opacity 1s ease;
     }
-    .carousel-inner {
-      height: 500px;
-      
-    }
 
+
+    .carousel-inner {
+      width: 100%;
+      max-height: 600px; /* optional: limits large images on big screens */
+    }
+    
     .carousel-item {
       height: 100%;
     }
 
     .carousel-item img {
-      height: 100%;
-      object-fit: cover;
+      width: 100%;
+      height: auto;        /* allow natural height */
+      display: block;
     }
+
 
     #portfolioCarousel {
       box-shadow: 0 8px 20px rgb(59, 59, 212);
