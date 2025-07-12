@@ -27,7 +27,7 @@
       <img src="images/siteLogo-negate.png" alt="Site Logo" width="30" height="30">
     </a>
     <div>
-      <a href="portfolio.html" class="text-white text-decoration-none">Portfolio</a>
+      <a href="portfolio.html" class="text-white text-decoration-none">Projects</a>
     </div>
   </div>
 </nav>
@@ -39,11 +39,67 @@
     <div class="container">
       <div class="row text-start pt-4 pb-4 mb-6">
         <div class="col">
-          <h1 style="font-size: 2.5rem;">Portfolio</h1>
+          <h1 style="font-size: 2.5rem;">Projects</h1>
         </div>
       </div>
       <br>
       <br>
+
+        <div class="row text-center mb-5">
+        <div class="col">
+          <strong style="font-size: 1.5rem;">University Projects</strong>
+          <p class="small">
+            During my time as a Computer Science major, I worked in multiple groups to create applications.<br>
+            The following are screenshots from two of those projects:
+            </p>
+            <p class = "small">
+              <span style = "font-weight: bold;">Tools Used:</span>
+              <span style = "font-style: italic;">Python, HTML/CSS, JavaScript, SQL, Bootstrap, GCP</span>
+            </p>
+        </div>
+      </div>
+    
+      <div class="row text-center mb-5">
+        <div class="col-md-6 mb-3">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">CampAIgn</h4>
+            <img src="images/Home-After.png" alt="Campaign Landing" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <br>
+            <img src="images/Generation-same.png" alt="Add Campaign" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <div class="card-body">
+              <p class="card-text">A web application we developed for my senior capstone project.  It utilizes the OpenAI API to allow
+                users to generate customizable ads for their business based on demographic.  The user selects the "perscpective", or tone, of the ad, 
+                as well as adds links to other webpages to inform the ad generation.
+                An image and a caption is generated into a social media post format to be exported, and saved in a project file system for later iterations.
+                I primarily worked on the front-end and the overall design and layout, as well as usability testing.  But, I did contribute
+                to the back-end routes and functionality, especially post-graduation, in an attempt to reconcile basic usability needs.
+                I have re-deployed the application, and it is accessible below, hosted on Google Cloud Platform.
+              </p>
+              <a href="https://campaign-463704.ue.r.appspot.com/" class="btn btn-light" target="_blank">Check it out!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">Jalapeno Heaven Redesign</h4>
+            <img src="images/jalapeno heaven homepage.png" alt="Actual Homepage" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <br>
+            <img src="images/jalapeno heaven homepage updated.png" alt="Updated Homepage" class="img-fluid thumbnail" onclick="openModal(this.src)">
+            <div class="card-body">
+              <p class="card-text">Done for a human-computer interaction class, we had a few months to redesign an existing website
+                using UI/UX principles.  The whole standard UI design process was followed, including user interviews, testing, wireframing
+                and prototyping.  While simplistic, the goal was to update the usability and accessibility of the site, which, when compared
+                to the original, was immensely successful. We updated the entire page flow, added a more visible color pallete (including abiding by
+                accessibility standards.), emphasized
+                the most commonly used features, and overall established a more modern feel to the site.  Above is a before and after of the homepage.
+                The source code is below, but given time constraints of the course, was built in a about 2 weeks. Updates are still being made.
+              </p>
+              <a href="https://github.com/danielrapuano/Jalapeno-Heaven-Prototype.git" class="btn btn-light" target="_blank">View Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!--Stock App-->
       <div class="row text-center mb-5">
@@ -113,7 +169,7 @@
               <p class="card-text">The data result page of the prototype. Post-search, a user receives key information about their company's stock.
                 Additionally, a chart is provided to visualize the stock's performance, with a dropdown that allows the user to select a time frame.
                 These seperate sections are delineated by cards on a contrasted background for visibility and clarity.
-                Once again, the design is minimalistic, serving the purrpose of the prototype.">
+                Once again, the design is minimalistic, serving the purrpose of the prototype."
               </p>
             </div>
           </div>
@@ -123,7 +179,34 @@
       <br>
 
 
-    <!-- The Shoppe-->
+ 
+    
+    <!-- Borders Social (taken out until its revised, doesn't look good)
+
+      <div class="row text-center mb-5">
+        <div class="col">
+          <strong style="font-size: 1.5rem;">Figma Project: "Borders Social"</strong>
+          <p class="small">Pages designed for a fictional skateboarder social media site.</p>
+        </div>
+      </div>
+    
+      <div class="row text-center mb-5">
+        <div class="col-md-4 mb-3">
+          <img src="images/borderslanding.png" alt="Borders Landing" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="images/bordersprofilecrop.png" alt="Borders Profile" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="images/bordersaccount.png" alt="Borders Account" class="img-fluid thumbnail" onclick="openModal(this.src)">
+        </div>
+      </div>
+    
+    -->
+    
+
+
+         <!-- The Shoppe-->
       <div class="row text-center mb-5">
         <div class="col">
           <strong style="font-size: 1.5rem;">Figma Design: "The Shoppe"</strong>
@@ -206,83 +289,6 @@
         </div>
       </div>
       <br>
-    
-    <!-- Borders Social (taken out until its revised, doesn't look good)
-
-      <div class="row text-center mb-5">
-        <div class="col">
-          <strong style="font-size: 1.5rem;">Figma Project: "Borders Social"</strong>
-          <p class="small">Pages designed for a fictional skateboarder social media site.</p>
-        </div>
-      </div>
-    
-      <div class="row text-center mb-5">
-        <div class="col-md-4 mb-3">
-          <img src="images/borderslanding.png" alt="Borders Landing" class="img-fluid thumbnail" onclick="openModal(this.src)">
-        </div>
-        <div class="col-md-4 mb-3">
-          <img src="images/bordersprofilecrop.png" alt="Borders Profile" class="img-fluid thumbnail" onclick="openModal(this.src)">
-        </div>
-        <div class="col-md-4 mb-3">
-          <img src="images/bordersaccount.png" alt="Borders Account" class="img-fluid thumbnail" onclick="openModal(this.src)">
-        </div>
-      </div>
-    
-    -->
-    
-      <div class="row text-center mb-5">
-        <div class="col">
-          <strong style="font-size: 1.5rem;">University Projects</strong>
-          <p class="small">
-            During my time as a Computer Science major, I worked in multiple groups to create applications.<br>
-            The following are screenshots from two of those projects:
-            </p>
-            <p class = "small">
-              <span style = "font-weight: bold;">Tools Used:</span>
-              <span style = "font-style: italic;">Bootstrap, HTML/CSS, JavaScript, Python, SQL</span>
-            </p>
-        </div>
-      </div>
-    
-      <div class="row text-center mb-5">
-        <div class="col-md-6 mb-3">
-          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
-            <h4 class="card-title" style = "padding: 5px;">CampAIgn</h4>
-            <img src="images/campAIgn-landing.jpg" alt="Campaign Landing" class="img-fluid thumbnail" onclick="openModal(this.src)">
-            <br>
-            <img src="images/add-campaign.jpg" alt="Add Campaign" class="img-fluid thumbnail" onclick="openModal(this.src)">
-            <div class="card-body">
-              <p class="card-text">A web application we developed for my senior capstone project.  It utilizes the OpenAI API to allow
-                users to generate customizable ads for their business based on demographic.  The user can also select the tone of the ad.
-                An image and a caption is generated into a social media post format to be exported, and saved in a project file system for later iterations.
-                The application is inactive due to keys being expired, and hosting issues. However, the source code is available below.
-                We received an A on the project, and it was well received by our professor and peers for its functionality, design, and depth. I worked 
-                on the front-end and the overall design and layout, as well as usability testing.
-              </p>
-              <a href="https://github.com/JPWarr7/AI-Campaign-Manager.git" class="btn btn-light" target="_blank">View Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-3">
-          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
-            <h4 class="card-title" style = "padding: 5px;">Jalapeno Heaven Redesign</h4>
-            <img src="images/jalapeno heaven homepage.png" alt="Actual Homepage" class="img-fluid thumbnail" onclick="openModal(this.src)">
-            <br>
-            <img src="images/jalapeno heaven homepage updated.png" alt="Updated Homepage" class="img-fluid thumbnail" onclick="openModal(this.src)">
-            <div class="card-body">
-              <p class="card-text">Done for a human-computer interaction class, we had a few months to redesign an existing website
-                using UI/UX principles.  The whole standard UI design process was followed, including user interviews, testing, wireframing
-                and prototyping.  While simplistic, the goal was to update the usability and accessibility of the site, which, when compared
-                to the original, was immensely successful. We updated the entire page flow, added a more visible color pallete, emphasized
-                the most commonly used features, and overall established a more modern feel to the site.  Above is a before and after of the homepage.
-                The source code is below, but given time constraints of the course, was built in a about 2 weeks. I will continue to update it, however.
-              </p>
-              <a href="https://github.com/danielrapuano/Jalapeno-Heaven-Prototype.git" class="btn btn-light" target="_blank">View Source Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
     
     </div>
     
