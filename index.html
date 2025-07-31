@@ -39,20 +39,23 @@
       box-shadow: 0 8px 20px rgb(59, 59, 212);
       border-radius: 0 0 10px 10px;
   }
+  .navbar .nav-link:hover {
+    text-decoration: underline;
+  }
 
   </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg" style="background-color: rgb(59, 59, 212); box-shadow: rgba(59, 59, 212, 0.2);">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="images/siteLogo-negate.png" alt="Site Logo" width="30" height="30">
-    </a>
-    <div>
-      <a href="portfolio.html" class="text-white text-decoration-none">Projects</a>
-    </div>
+<nav class="navbar navbar-expand-lg px-4" style="background-color: rgb(59, 59, 212); box-shadow: rgba(59, 59, 212, 0.2);">
+  <a class="navbar-brand" href="index.html">
+    <img src="images/siteLogo-negate.png" alt="Site Logo" width="30" height="30">
+  </a>
+
+  <div class="d-flex ms-auto">
+    <a href="portfolio.html" class="nav-link text-white me-4">Projects</a>
+    <a href="https://docs.google.com/document/d/1ClsPPgi_Iko-abdvHyR-lzetCGBqWZGg1gmByiHWZiY/edit?tab=t.0" class="nav-link text-white">Application Redesign Report</a>
   </div>
 </nav>
 <br>
@@ -68,6 +71,7 @@
           as well as a brief summary of my background and skills.
         </p>
         <a href="portfolio.html" class="btn btn-light mt-3 mb-4">View some projects</a>
+        <a href="https://docs.google.com/document/d/1ClsPPgi_Iko-abdvHyR-lzetCGBqWZGg1gmByiHWZiY/edit?tab=t.0" class="btn btn-light mt-3 mb-4">Application Redesign Report</a>
       </div>
       <div class="col-md-6 text-center">
         <img src="images/devs-dan-resize.jpg" alt="Daniel Rapuano" class="img-fluid rounded">
@@ -88,19 +92,19 @@
       <div id="portfolioCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner rounded shadow">
           <div class="carousel-item">
-            <img src="images/Home-After.png" class="d-block w-100 img-fluid" alt="Project 5">
+            <img src="images/Home-After.png" class="d-block w-100 img-fluid" alt="Project 1">
           </div>
           <div class="carousel-item">
-            <img src="images/ShoppeLanding.png" class="d-block w-100 img-fluid" alt="Project 4">
+            <img src="images/ShoppeLanding.png" class="d-block w-100 img-fluid" alt="Project 2">
           </div>
           <div class="carousel-item">
-            <img src="images/Generation-same.png" class="d-block w-100 img-fluid" alt="Project 3">
+            <img src="images/QuikStockData.png" class="d-block w-100 img-fluid" alt="Project 3">
           </div>
           <div class="carousel-item active">
-            <img src="images/QuikStockData.png" class="d-block w-100 img-fluid" alt="Project 1">
+            <img src="images/ShreddedHome.png" class="d-block w-100 img-fluid" alt="Project 4">
           </div>
           <div class="carousel-item">
-            <img src="images/ShoppePants.png" class="d-block w-100 img-fluid" alt="Project 2">
+            <img src="images/Generation-same.png" class="d-block w-100 img-fluid" alt="Project 5">
           </div>
 
 

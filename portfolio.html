@@ -16,19 +16,21 @@
       .thumbnail:hover {
         transform: scale(1.05);
 }
-
+  .navbar .nav-link:hover {
+    text-decoration: underline;
+  }
     </style>
       
       
 
-<nav class="navbar navbar-expand-lg" style="background-color: rgb(59, 59, 212);">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="images/siteLogo-negate.png" alt="Site Logo" width="30" height="30">
-    </a>
-    <div>
-      <a href="portfolio.html" class="text-white text-decoration-none">Projects</a>
-    </div>
+<nav class="navbar navbar-expand-lg px-4" style="background-color: rgb(59, 59, 212); box-shadow: rgba(59, 59, 212, 0.2);">
+  <a class="navbar-brand" href="index.html">
+    <img src="images/siteLogo-negate.png" alt="Site Logo" width="30" height="30">
+  </a>
+
+  <div class="d-flex ms-auto">
+    <a href="portfolio.html" class="nav-link text-white me-4">Projects</a>
+    <a href="https://docs.google.com/document/d/1ClsPPgi_Iko-abdvHyR-lzetCGBqWZGg1gmByiHWZiY/edit?tab=t.0" class="nav-link text-white">Application Redesign Report</a>
   </div>
 </nav>
       
@@ -50,7 +52,7 @@
           <strong style="font-size: 1.5rem;">University Projects</strong>
           <p class="small">
             During my time as a Computer Science major, I worked in multiple groups to create applications.<br>
-            The following are screenshots from two of those projects:
+            The following are screenshots from two of those projects. Campaign is accessible through the button below to try out:
             </p>
             <p class = "small">
               <span style = "font-weight: bold;">Tools Used:</span>
@@ -75,7 +77,7 @@
                 to the back-end routes and functionality, especially post-graduation, in an attempt to reconcile basic usability needs.
                 I have re-deployed the application, and it is accessible below, hosted on Google Cloud Platform.
               </p>
-              <a href="https://campaign-463704.ue.r.appspot.com/" class="btn btn-light" target="_blank">Check it out!</a>
+              <a href="https://campaign-463704.ue.r.appspot.com/" class="btn btn-light" target="_blank">Go to Application</a>
             </div>
           </div>
         </div>
@@ -112,7 +114,8 @@
             My goal was not create a detailed applicaiton, but to show my ability to 
             create a functional prototype and to show my design process.  That, I am able to not
             only design a product itteratively through user feedback, but also program the front-end, 
-            and back-end using API requests.
+            and back-end using API requests.  Given the limited functionality and pages, I have not deployed this application anywhere.
+            Until I can add more functinality, thes following screenshots represent entirely what the application can do.
           </p>
           <p class = "small">
             <span style = "font-weight: bold;">Tools Used:</span>
@@ -155,7 +158,7 @@
               <p class="card-text">The landing page of the prototype.  The sole purpose of this applicaiton is to look up a stock,
                 therefore the design should reflect that simplicity and minimalism.  A single search bar is provided to the user, along with a search button. 
                 Beneath is a brief news feed of market news, and above is a navigation bar, of which one of the options is to view recently searched/ 
-                saved stocks to future access.
+                saved stocks to future access. The goal is to add this functionality next.
               </p>
             </div>
           </div>
@@ -204,59 +207,7 @@
     
     -->
     
-      <div class="row text-center mb-5">
-        <div class="col">
-          <strong style="font-size: 1.5rem;">University Projects</strong>
-          <p class="small">
-            During my time as a Computer Science major, I worked in multiple groups to create applications.<br>
-            The following are screenshots from two of those projects:
-            </p>
-            <p class = "small">
-              <span style = "font-weight: bold;">Tools Used:</span>
-              <span style = "font-style: italic;">Bootstrap, HTML/CSS, JavaScript, Python, SQL</span>
-            </p>
-        </div>
-      </div>
-    
-      <div class="row text-center mb-5">
-        <div class="col-md-6 mb-3">
-          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
-            <h4 class="card-title" style = "padding: 5px;">CampAIgn</h4>
-            <img src="images/campAIgn-landing.jpg" alt="Campaign Landing" class="img-fluid thumbnail" onclick="openModal(this.src)">
-            <br>
-            <img src="images/add-campaign.jpg" alt="Add Campaign" class="img-fluid thumbnail" onclick="openModal(this.src)">
-            <div class="card-body">
-              <p class="card-text">A web application we developed for my senior capstone project.  It utilizes the OpenAI API to allow
-                users to generate customizable ads for their business based on demographic.  The user can also select the tone of the ad.
-                An image and a caption is generated into a social media post format to be exported, and saved in a project file system for later iterations.
-                The application is inactive due to keys being expired, and hosting issues. However, the source code is available below.
-                We received an A on the project, and it was well received by our professor and peers for its functionality, design, and depth. I worked 
-                on the front-end and the overall design and layout, as well as usability testing.
-              </p>
-              <a href="https://github.com/JPWarr7/AI-Campaign-Manager.git" class="btn btn-light" target="_blank">View Source Code</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-md-6 mb-3">
-          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
-            <h4 class="card-title" style = "padding: 5px;">Jalapeno Heaven Redesign</h4>
-            <img src="images/jalapeno heaven homepage.png" alt="Actual Homepage" class="img-fluid thumbnail" onclick="openModal(this.src)">
-            <br>
-            <img src="images/jalapeno heaven homepage updated.png" alt="Updated Homepage" class="img-fluid thumbnail" onclick="openModal(this.src)">
-            <div class="card-body">
-              <p class="card-text">Done for a human-computer interaction class, we had a few months to redesign an existing website
-                using UI/UX principles.  The whole standard UI design process was followed, including user interviews, testing, wireframing
-                and prototyping.  While simplistic, the goal was to update the usability and accessibility of the site, which, when compared
-                to the original, was immensely successful. We updated the entire page flow, added a more visible color pallete, emphasized
-                the most commonly used features, and overall established a more modern feel to the site.  Above is a before and after of the homepage.
-                The source code is below, but given time constraints of the course, was built in a about 2 weeks. I will continue to update it, however.
-              </p>
-              <a href="https://github.com/danielrapuano/Jalapeno-Heaven-Prototype.git" class="btn btn-light" target="_blank">View Source Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
          <!-- The Shoppe-->
       <div class="row text-center mb-5">
@@ -306,8 +257,11 @@
         <div class="col">
           <strong style="font-size: 1.5rem;">Figma Design: "Shredded"</strong>
           <p class="small">Pages designed for a fictional fitness app.  I tried to emphasis clustering and grouping
-            of elements, while prioritizing and distilling down the most important features, making them easily accessible
+            of elements, while prioritizing and distilling down the most important features, making them easily accessible.
+            This is an ongoing design, and therefore the prototype only includes two pages, without any functionality. The goal
+            is to continue to implement all pages, their interactivity, and imporove on UI/UX principles and style.
           </p>
+          <a href="https://www.figma.com/proto/tW0CVH4QbOqlxTHytwdATn/Shredded?node-id=2-36&p=f&t=4bQbmKwRDW872tVQ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A36" class="btn btn-primary" target="_blank">View Prototype</a>
         </div>
       </div>
     
@@ -333,7 +287,7 @@
             <div class="card-body">
               <p class="card-text">This page showcases a diet plan for the user, with a listing of that current days meals, and
                 each item's nutritional information which can be acccessed by a dropdown menu. Immediate information about thier chosen
-                diet plan is provided at the top, along with the amount of calories needed for the day.
+                diet plan is provided at the top, along with the amount of calories needed for the day predicated on the selected diet.
                 The design emphasizes clarity and ease of use, allowing users to focus on their fitness goals.
               </p>
             </div>
