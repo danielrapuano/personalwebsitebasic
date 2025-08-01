@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="head">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap">
+
+    <style>
+      .thumbnail {
+        transition: transform 0.3s ease-in-out;
+}
+
+      .thumbnail:hover {
+        transform: scale(1.05);
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+    </style>
+      
+      
+
+<nav class="navbar navbar-expand-lg px-4" style="background-color: rgb(59, 59, 212); box-shadow: rgba(59, 59, 212, 0.2);">
+  <a class="navbar-brand" href="index.html">
+    <img src="images/siteLogo-negate.png" alt="Site Logo" width="30" height="30">
+  </a>
+
+  <div class="d-flex ms-auto">
+    <a href="index.html" class="nav-link text-white me-3">Home</a>
+    <a href="portfolio.html" class="nav-link text-white">Projects</a>
+  </div>
+</nav>
+
+      
+    
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="row text-start pt-4 pb-4 mb-6">
+        <div class="col">
+          <h1 style="font-size: 2.5rem;">Reports</h1>
+        </div>
+      </div>
+      <br>
+      <br>
+
+       <div class="row text-center mb-5">
+        <div class="col">
+          <strong style="font-size: 1.5rem;">AI application and Commercial Website Redesign</strong>
+          <p class="small">
+            During my time as a Computer Science major, I worked in multiple groups to create applications.<br>
+            The following are the final reports, as well as a report of a redesign I have been working on to improve<br> usability for one of them.
+            Links to the source code, live application, and images can be found on the Portfolio page.
+            </p>
+            <p class = "small">
+              <span style = "font-weight: bold;">Tools Used:</span>
+              <span style = "font-style: italic;">Python, HTML/CSS, JavaScript, SQL, Bootstrap, GCP</span>
+            </p>
+        </div>
+      </div>
+    
+      <div class="row text-center mb-5">
+
+        <div class="col-md-6 mb-3">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">AI Application</h4>
+            <iframe src="reportfiles/CSC400 Report.pdf#toolbar=0" style="height: 200px;" class="card-img-top" type="application/pdf"></iframe>
+            <br>
+            <div class="card-body">
+              <p class="card-text">A web application we developed for my senior capstone project.  It utilizes the OpenAI API to allow
+                users to generate customizable ads for their business based on demographic (persepctive), product, and external website links.
+                An image and a caption is generated into a social media post format to be exported, and saved in a project file system for later iterations.
+                Below are links to the final report, as well as a report of some of the ongoing redesign I have worked on to improve usability.
+              </p>
+              <a href="reportfiles/CSC400 Report.pdf" class="btn btn-light" target="_blank">Final Report</a>
+              <a href="reportfiles/Campaign Redesign.pdf" class="btn btn-light" target="_blank">Redesign Report</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card text-white" style = "padding: 10px; background-color: rgb(59, 59, 212); box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);">
+            <h4 class="card-title" style = "padding: 5px;">Commercial Website Redesign</h4>
+            <iframe src="reportfiles/CSC334 Report.pdf" style="height: 200px;" class="card-img-top" type="application/pdf"></iframe>
+            <br>
+            <div class="card-body">
+              <p class="card-text">Done for a human-computer interaction class, we were tasked to redesign an existing website
+                using UI/UX principles.  The whole standard UI design process was followed, including user interviews, usability testing, wireframing
+                and prototyping.  The goal was to update the usability and accessibility of the site. We updated the entire page flow, color pallete, emphasized
+                the most commonly used features, and overall established a more modern feel to the site. Source code, and before and after images 
+                can be found on the Portolio page.
+              </p>
+              <a href="reportfiles/CSC334 Report.pdf" class="btn btn-light" target="_blank">Final Report</a>
+              <a href="reportfiles/CSC 334 Presentation.pdf" class="btn btn-light" target="_blank">Final Presentation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      
+  
+
+    <!-- SINGLE MODAL outside container -->
+    <div class="modal" id="imageModal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+      <span class="close" onclick="closeModal()" style="position: absolute; top: 10px; right: 20px; font-size: 40px; color: white; cursor: pointer;">&times;</span>
+      <img id="modalImage" src="" alt="Enlarged" style="max-width: 90%; max-height: 90%;">
+    </div>
+    
+    <script>
+      function openModal(src) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        modal.style.display = "flex";
+        modalImg.src = src;
+      }
+      
+      function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+      
+      // Close modal if the user clicks outside the image
+      document.getElementById("imageModal").addEventListener("click", function(event) {
+        const modalImg = document.getElementById("modalImage");
+        if (event.target !== modalImg) {
+          closeModal();
+        }
+      });
+      </script>
+      
+    
+    </body>
+    
+<footer>
+    
+</footer>
+
+</html>
